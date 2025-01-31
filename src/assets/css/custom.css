@@ -1,0 +1,42 @@
+.portfolio-subtitle {
+    line-height: 3rem;
+    font-size: 2.5rem;    
+}
+
+.bg_image--1, .bg_image--17 {
+    background-image: url(./assets/images/bg/bg-image-1.jpg) !important;
+    background: currentColor;
+}
+
+
+.portfolio-subtitle {
+    line-height: 3rem;
+    font-size: 2.5rem;    
+}
+
+.bg_image--1, .bg_image--17 {
+    background-image: url(./assets/images/bg/bg-image-1.jpg) !important;
+    background: currentColor;
+}
+
+.portfolio-description img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.portfolio-description img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.portfolio-description figcaption {
+    text-align: center;
+    font-size: 0.5em;
+    color: #919191 !important;
+}
+
+  
