@@ -32,9 +32,10 @@ const CreativePortfolio = () => {
 
             return {
               id: item.id,
+              slug: item.slug,  // Ahora incluye el slug
               title: item.title.rendered,
               category: "Portafolio", // Puedes cambiar esto si hay categorías reales en la API
-              image: imageUrl || "https://via.placeholder.com/300",
+              image: imageUrl || "https://via.placeholder.com/300x300",
             };
           })
         );
@@ -50,7 +51,7 @@ const CreativePortfolio = () => {
 
   return (
     <div className="creative-portfolio">
-      <Helmet pageTitle="Creative Portfolio" />
+      <Helmet pageTitle="🚀 Social Media Panamá | Estrategias Digitales 2025: SEO, Ads y Contenidos que Convierten" />
 
       {/* Start Header Area */}
       <Header headerPosition="header--static" logo="symbol-dark" color="color-black" />
@@ -93,7 +94,7 @@ const CreativePortfolio = () => {
                   <div className="portfolio-style--2">
                     <div
                       className="thumbnail"
-                      onClick={() => navigate(`/portafolio/${item.id}`)}
+                      onClick={() => navigate(`/portafolio/${item.slug}`)}
                       style={{ cursor: "pointer" }}
                     >
                       <img className="w-100" src={item.image} alt={item.title} />
@@ -102,7 +103,7 @@ const CreativePortfolio = () => {
                       <p className="portfoliotype">{item.category}</p>
                       <h4
                         className="title"
-                        onClick={() => navigate(`/portafolio/${item.id}`)}
+                        onClick={() => navigate(`/portafolio/${item.slug}`)}
                         style={{ cursor: "pointer" }}
                       >
                         {item.title}
@@ -110,7 +111,7 @@ const CreativePortfolio = () => {
                       <div className="portfolio-btn">
                         <button
                           className="rn-btn text-black"
-                          onClick={() => navigate(`/portafolio/${item.id}`)}
+                          onClick={() => navigate(`/portafolio/${item.slug}`)}
                         >
                           Ver más
                         </button>

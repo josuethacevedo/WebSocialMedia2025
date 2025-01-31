@@ -32,7 +32,8 @@ function App() {
         <Route path="/blog-details/:slug" element={<BlogDetails />} />+
 
         {/* Ruta para detalles del portafolio */}
-        <Route path="/portafolio/:id" element={<PortfolioDetails />} />
+        {/* <Route path="/portafolio/:id" element={<PortfolioDetails />} /> */}
+        <Route path="/portafolio/:slug" element={<PortfolioDetails />} />
 
         {/* Ruta para detalles de los servicios */}
         <Route path="/service-detail/:slug" element={<ServiceDetail />} />

@@ -79,6 +79,9 @@ class HeaderFour extends Component {
                   <Link to="/service">Servicios</Link>
                 </li>
                 <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
                   <Link to="/contact">Contacto</Link>
                 </li>
               </ul>
